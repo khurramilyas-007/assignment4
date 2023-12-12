@@ -22,7 +22,7 @@ pipeline {
                 sshPublisher(
                     publishers: [
                         sshPublisherDesc(
-                            configName: 'MyUbuntuServer',
+                            configName: 'myserver',
                             transfers: [sshTransfer(sourceFiles: '**/*', remoteDirectory: 'myapp/')],
                             
                         )
